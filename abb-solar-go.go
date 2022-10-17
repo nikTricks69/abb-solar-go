@@ -35,7 +35,9 @@ func getMetrics() http.HandlerFunc {
 				key := fmt.Sprint(myMap["name"])
 				val := fmt.Sprint(myMap["value"])
 				w.Write([]byte(key))
+				w.Write([]byte(" "))
 				w.Write([]byte(val))
+				w.Write([]byte("\n"))
 				//YAHOOO
 				//fmt.Println(n.Value().name)
 			}
